@@ -27,7 +27,7 @@ var getRepoIssues = function(repo) {
     if (response.ok) {
       response.json().then(function(data) {
         // pass response data to dom function
-        displayIssues(data);
+        displayIssues(data);                                                           
 
         // check if api has paginated issues
         if (response.headers.get("Link")) {
